@@ -55,6 +55,9 @@
     _manager.desiredAccuracy = kCLLocationAccuracyBest;
     _manager.distanceFilter = 5.0f;
     [_manager startUpdatingLocation];
+    
+    self.callButton.backgroundColor = [UIColor colorWithRed:0 green:0.60 blue:0.93 alpha:1];
+    self.bookNowButton.backgroundColor = [UIColor colorWithRed:0 green:0.53 blue:0.81 alpha:1];
 }
 
 - (void) addshadows:(UIView *)view

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1670A8441B4F12F600594007 /* BebasNeue.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1670A8431B4F12F600594007 /* BebasNeue.otf */; };
 		16CCD03D1B386D9100756EC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CCD03C1B386D9100756EC6 /* main.m */; };
 		16CCD0401B386D9100756EC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CCD03F1B386D9100756EC6 /* AppDelegate.m */; };
 		16CCD0431B386D9100756EC6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CCD0421B386D9100756EC6 /* ViewController.m */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1670A8431B4F12F600594007 /* BebasNeue.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BebasNeue.otf; sourceTree = "<group>"; };
 		16CCD0371B386D9100756EC6 /* TransportInc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransportInc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16CCD03B1B386D9100756EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16CCD03C1B386D9100756EC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		16CCD03A1B386D9100756EC6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1670A8431B4F12F600594007 /* BebasNeue.otf */,
 				16CCD03B1B386D9100756EC6 /* Info.plist */,
 				16CCD03C1B386D9100756EC6 /* main.m */,
 			);
@@ -227,6 +230,7 @@
 			files = (
 				16CCD0461B386D9100756EC6 /* Main.storyboard in Resources */,
 				16CCD04B1B386D9100756EC6 /* LaunchScreen.xib in Resources */,
+				1670A8441B4F12F600594007 /* BebasNeue.otf in Resources */,
 				16CCD0481B386D9100756EC6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

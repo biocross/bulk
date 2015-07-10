@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E3BB2AF1-4049-45D7-84CC-F9DDE112CB6B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TransportInc</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4E671A7B7340E56DA120982012B3CA2456BCF312</key>
+		<string>https://github.com/biocross/bulk.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TransportInc.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4E671A7B7340E56DA120982012B3CA2456BCF312</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/biocross/bulk.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4E671A7B7340E56DA120982012B3CA2456BCF312</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4E671A7B7340E56DA120982012B3CA2456BCF312</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TransportInc</string>
+		</dict>
+	</array>
+</dict>
+</plist>

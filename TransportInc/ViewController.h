@@ -14,6 +14,9 @@
 
 - (IBAction)getMyLocation:(id)sender;
 @property (strong, nonatomic) IBOutlet UIView *myLocationButtonView;
+@property (strong, nonatomic) IBOutlet UIButton *bookNowButton;
+@property (strong, nonatomic) IBOutlet UIButton *callButton;
+
 
 @end
 
