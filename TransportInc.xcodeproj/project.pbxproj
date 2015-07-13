@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1653734A1B50F96F00BE6A4B /* BookNowTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 165373491B50F96F00BE6A4B /* BookNowTableViewController.m */; };
+		1669A9711B52E6DD006C015F /* AddressPickerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1669A9701B52E6DD006C015F /* AddressPickerTableViewController.m */; };
 		1670A8441B4F12F600594007 /* BebasNeue.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1670A8431B4F12F600594007 /* BebasNeue.otf */; };
 		16CCD03D1B386D9100756EC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CCD03C1B386D9100756EC6 /* main.m */; };
 		16CCD0401B386D9100756EC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CCD03F1B386D9100756EC6 /* AppDelegate.m */; };
@@ -15,7 +17,7 @@
 		16CCD0481B386D9100756EC6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16CCD0471B386D9100756EC6 /* Images.xcassets */; };
 		16CCD04B1B386D9100756EC6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16CCD0491B386D9100756EC6 /* LaunchScreen.xib */; };
 		16CCD0571B386D9100756EC6 /* TransportIncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CCD0561B386D9100756EC6 /* TransportIncTests.m */; };
-		459D994F7A942270AD13F711 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C0B54306074AECF2E088E4 /* libPods.a */; };
+		943ABC5FF8D167071D94F65E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DB4464B1DEF3A0C9C02C8C /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		165373481B50F96F00BE6A4B /* BookNowTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookNowTableViewController.h; sourceTree = "<group>"; };
+		165373491B50F96F00BE6A4B /* BookNowTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookNowTableViewController.m; sourceTree = "<group>"; };
+		1669A96F1B52E6DD006C015F /* AddressPickerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressPickerTableViewController.h; sourceTree = "<group>"; };
+		1669A9701B52E6DD006C015F /* AddressPickerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressPickerTableViewController.m; sourceTree = "<group>"; };
 		1670A8431B4F12F600594007 /* BebasNeue.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BebasNeue.otf; sourceTree = "<group>"; };
 		16CCD0371B386D9100756EC6 /* TransportInc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransportInc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16CCD03B1B386D9100756EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,9 +49,9 @@
 		16CCD0501B386D9100756EC6 /* TransportIncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransportIncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16CCD0551B386D9100756EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16CCD0561B386D9100756EC6 /* TransportIncTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransportIncTests.m; sourceTree = "<group>"; };
+		51DB4464B1DEF3A0C9C02C8C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C9ADB17351AE8174A3973B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		72FA2E7747AA98141643A196 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		C8C0B54306074AECF2E088E4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				459D994F7A942270AD13F711 /* libPods.a in Frameworks */,
+				943ABC5FF8D167071D94F65E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +101,10 @@
 				16CCD0411B386D9100756EC6 /* ViewController.h */,
 				16CCD0421B386D9100756EC6 /* ViewController.m */,
 				16CCD0441B386D9100756EC6 /* Main.storyboard */,
+				1669A96F1B52E6DD006C015F /* AddressPickerTableViewController.h */,
+				1669A9701B52E6DD006C015F /* AddressPickerTableViewController.m */,
+				165373481B50F96F00BE6A4B /* BookNowTableViewController.h */,
+				165373491B50F96F00BE6A4B /* BookNowTableViewController.m */,
 				16CCD0471B386D9100756EC6 /* Images.xcassets */,
 				16CCD0491B386D9100756EC6 /* LaunchScreen.xib */,
 				16CCD03A1B386D9100756EC6 /* Supporting Files */,
@@ -132,7 +142,7 @@
 		224CD9D4C8DC217815FCB566 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C8C0B54306074AECF2E088E4 /* libPods.a */,
+				51DB4464B1DEF3A0C9C02C8C /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -283,8 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				16CCD0431B386D9100756EC6 /* ViewController.m in Sources */,
+				1653734A1B50F96F00BE6A4B /* BookNowTableViewController.m in Sources */,
 				16CCD0401B386D9100756EC6 /* AppDelegate.m in Sources */,
 				16CCD03D1B386D9100756EC6 /* main.m in Sources */,
+				1669A9711B52E6DD006C015F /* AddressPickerTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
