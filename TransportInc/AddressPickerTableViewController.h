@@ -12,16 +12,19 @@
 
 @protocol AddressPickerDelegate <NSObject>
 @required
-- (void)selectedAddress: (GMSAutocompletePrediction *)address;
+- (void)selectedAddress:(GMSAutocompletePrediction *)address ForID:(int)recieverID;
 @end
 
 
-@interface AddressPickerTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
+@interface AddressPickerTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 
-- (IBAction)backButtonPressed:(id)sender;
-@property (strong, nonatomic) IBOutlet UITextField *addressField;
 @property (strong, nonatomic) IBOutlet UIView *mapContainer;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UISearchBar *seachBar;
+@property (strong, nonatomic) IBOutlet UIButton *selectPlaceButton;
 
+@property (strong) NSNumber* recieverID;
 @property (nonatomic,strong) id delegate;
+- (IBAction)selectPlacePressed:(id)sender;
+
 @end

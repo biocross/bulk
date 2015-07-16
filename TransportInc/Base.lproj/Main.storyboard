@@ -8,6 +8,11 @@
         <mutableArray key="BebasNeue.otf">
             <string>BebasNeue</string>
             <string>BebasNeue</string>
+            <string>BebasNeue</string>
+            <string>BebasNeue</string>
+            <string>BebasNeue</string>
+            <string>BebasNeue</string>
+            <string>BebasNeue</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -116,6 +121,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="u2U-zX-75s" userLabel="ButtonView">
+                            <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOz-xd-8bd" userLabel="Book Now">
+                                    <rect key="frame" x="147" y="7" width="120" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="120" id="8EW-Mf-7Wi"/>
+                                        <constraint firstAttribute="height" constant="30" id="QEU-h8-nEi"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="21"/>
+                                    <state key="normal" title="Book Now">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="centerY" secondItem="xOz-xd-8bd" secondAttribute="centerY" id="3cN-xm-z13"/>
+                                <constraint firstAttribute="centerX" secondItem="xOz-xd-8bd" secondAttribute="centerX" id="fLh-eU-hz6"/>
+                                <constraint firstAttribute="height" constant="44" id="mCu-Iq-2mc"/>
+                            </constraints>
+                        </view>
                         <sections>
                             <tableViewSection headerTitle="Pick Up" id="EYa-hd-RoC">
                                 <cells>
@@ -124,10 +153,10 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JBd-mB-he5" id="N6J-qb-LGZ">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Select a location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zvJ-EW-6YK">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Select Pick Up Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zvJ-EW-6YK">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="&gt;" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PRo-xC-2hw">
@@ -143,10 +172,24 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Destination" id="Url-xE-4Yg">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JY0-O0-Qf8">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Wz8-VZ-UlA" detailTextLabel="ah5-cl-bAe" style="IBUITableViewCellStyleValue1" id="JY0-O0-Qf8">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JY0-O0-Qf8" id="KFM-Vs-9Fr">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Select Drop Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wz8-VZ-UlA">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="&gt;" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ah5-cl-bAe">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -168,6 +211,11 @@
                         </connections>
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="BookNowButton" destination="u2U-zX-75s" id="S6K-IV-Asv"/>
+                        <outlet property="dropLabel" destination="Wz8-VZ-UlA" id="sdt-Ll-5z8"/>
+                        <outlet property="pickUpLabel" destination="zvJ-EW-6YK" id="RCJ-97-yY9"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dhd-gG-UHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -185,54 +233,85 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LgP-Vf-047" userLabel="Map">
-                                <rect key="frame" x="0.0" y="124" width="414" height="0.0"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search Address" translatesAutoresizingMaskIntoConstraints="NO" id="RWQ-ip-Jyx">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LgP-Vf-047" userLabel="Map">
+                                <rect key="frame" x="0.0" y="64" width="414" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" id="KXf-eV-R4f"/>
+                                    <constraint firstAttribute="height" constant="180" id="KXf-eV-R4f"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5tK-G6-8o5">
-                                <rect key="frame" x="0.0" y="124" width="414" height="612"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5tK-G6-8o5">
+                                <rect key="frame" x="0.0" y="244" width="414" height="448"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AddressCell" textLabel="qrd-4E-vUn" style="IBUITableViewCellStyleDefault" id="jYQ-L8-utn">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jYQ-L8-utn" id="7Xp-br-1ZQ">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qrd-4E-vUn">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="umg-yt-K5f" userLabel="Navigation">
-                                <rect key="frame" x="0.0" y="64" width="414" height="60"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Cj-hd-Vsn" userLabel="ButtonView">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YNq-J8-D5k">
-                                        <rect key="frame" x="8" y="15" width="398" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyv-5N-32j" userLabel="Book Now">
+                                        <rect key="frame" x="147" y="3" width="120" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="UFh-bA-vYG"/>
+                                            <constraint firstAttribute="width" constant="120" id="s5v-it-gop"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="21"/>
+                                        <state key="normal" title="Select">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectPlacePressed:" destination="HpZ-Xi-Dli" eventType="touchUpInside" id="zbh-qM-rCf"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="YNq-J8-D5k" secondAttribute="bottom" constant="15" id="3bu-eM-h8h"/>
-                                    <constraint firstItem="YNq-J8-D5k" firstAttribute="leading" secondItem="umg-yt-K5f" secondAttribute="leading" constant="8" id="CfB-Mj-M85"/>
-                                    <constraint firstAttribute="trailing" secondItem="YNq-J8-D5k" secondAttribute="trailing" constant="8" id="Xo0-co-WlG"/>
-                                    <constraint firstItem="YNq-J8-D5k" firstAttribute="top" secondItem="umg-yt-K5f" secondAttribute="top" constant="15" id="mgF-7j-GCi"/>
-                                    <constraint firstAttribute="height" constant="60" id="tZv-VM-bZ0"/>
+                                    <constraint firstAttribute="height" constant="44" id="5cm-D4-egH"/>
+                                    <constraint firstAttribute="centerX" secondItem="lyv-5N-32j" secondAttribute="centerX" id="5yN-Ng-Kqe"/>
+                                    <constraint firstAttribute="centerY" secondItem="lyv-5N-32j" secondAttribute="centerY" id="wIc-hZ-1SI"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="5tK-G6-8o5" firstAttribute="leading" secondItem="flF-32-eBB" secondAttribute="leadingMargin" constant="-16" id="3fL-Wc-GqX"/>
-                            <constraint firstItem="zVU-1G-Adi" firstAttribute="top" secondItem="5tK-G6-8o5" secondAttribute="bottom" id="4Me-Hc-RDE"/>
-                            <constraint firstItem="5tK-G6-8o5" firstAttribute="top" secondItem="LgP-Vf-047" secondAttribute="bottom" id="5Xf-P6-YjX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="umg-yt-K5f" secondAttribute="trailing" constant="-16" id="HCc-sD-93T"/>
-                            <constraint firstItem="LgP-Vf-047" firstAttribute="leading" secondItem="flF-32-eBB" secondAttribute="leadingMargin" constant="-16" id="Kf5-Cv-eRA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="LgP-Vf-047" secondAttribute="trailing" constant="-16" id="NiA-xE-3C0"/>
-                            <constraint firstItem="umg-yt-K5f" firstAttribute="leading" secondItem="flF-32-eBB" secondAttribute="leadingMargin" constant="-16" id="cQf-f5-w3C"/>
-                            <constraint firstItem="umg-yt-K5f" firstAttribute="top" secondItem="IUr-Oh-yIj" secondAttribute="bottom" id="h2I-ra-Zj1"/>
-                            <constraint firstItem="LgP-Vf-047" firstAttribute="top" secondItem="umg-yt-K5f" secondAttribute="bottom" id="mSX-8a-D9K"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="5tK-G6-8o5" secondAttribute="trailing" constant="-16" id="zVR-SB-lHG"/>
+                            <constraint firstItem="RWQ-ip-Jyx" firstAttribute="top" secondItem="IUr-Oh-yIj" secondAttribute="bottom" id="0oW-Wz-5xf"/>
+                            <constraint firstItem="LgP-Vf-047" firstAttribute="leading" secondItem="flF-32-eBB" secondAttribute="leadingMargin" constant="-16" id="1I1-VV-Efe"/>
+                            <constraint firstItem="5tK-G6-8o5" firstAttribute="top" secondItem="LgP-Vf-047" secondAttribute="bottom" id="3LD-T0-Q0q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LgP-Vf-047" secondAttribute="trailing" constant="-16" id="4UF-lc-x0a"/>
+                            <constraint firstItem="6Cj-hd-Vsn" firstAttribute="top" secondItem="5tK-G6-8o5" secondAttribute="bottom" id="8vf-vX-mH8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RWQ-ip-Jyx" secondAttribute="trailing" constant="-16" id="9lz-pa-lye"/>
+                            <constraint firstItem="RWQ-ip-Jyx" firstAttribute="leading" secondItem="flF-32-eBB" secondAttribute="leadingMargin" constant="-16" id="Mem-Ku-mSQ"/>
+                            <constraint firstItem="5tK-G6-8o5" firstAttribute="leading" secondItem="flF-32-eBB" secondAttribute="leadingMargin" constant="-16" id="bKv-0D-CkK"/>
+                            <constraint firstItem="zVU-1G-Adi" firstAttribute="top" secondItem="6Cj-hd-Vsn" secondAttribute="bottom" id="bOe-VW-mx3"/>
+                            <constraint firstItem="6Cj-hd-Vsn" firstAttribute="leading" secondItem="flF-32-eBB" secondAttribute="leadingMargin" constant="-16" id="fzs-4W-z1V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5tK-G6-8o5" secondAttribute="trailing" constant="-16" id="hIC-Da-A9c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Cj-hd-Vsn" secondAttribute="trailing" constant="-16" id="kzU-Zw-6xe"/>
+                            <constraint firstItem="LgP-Vf-047" firstAttribute="top" secondItem="RWQ-ip-Jyx" secondAttribute="bottom" id="wMG-lX-HO2"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="addressField" destination="YNq-J8-D5k" id="UhI-Pu-YYu"/>
                         <outlet property="mapContainer" destination="LgP-Vf-047" id="eZy-7T-vH0"/>
+                        <outlet property="seachBar" destination="RWQ-ip-Jyx" id="pPQ-wp-ZG7"/>
+                        <outlet property="selectPlaceButton" destination="lyv-5N-32j" id="3k3-Ph-jQy"/>
                         <outlet property="tableView" destination="5tK-G6-8o5" id="LUr-hK-UeL"/>
                     </connections>
                 </viewController>
