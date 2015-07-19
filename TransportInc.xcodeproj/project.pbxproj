@@ -10,6 +10,8 @@
 		1653734A1B50F96F00BE6A4B /* BookNowTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 165373491B50F96F00BE6A4B /* BookNowTableViewController.m */; };
 		1669A9711B52E6DD006C015F /* AddressPickerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1669A9701B52E6DD006C015F /* AddressPickerTableViewController.m */; };
 		1670A8441B4F12F600594007 /* BebasNeue.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1670A8431B4F12F600594007 /* BebasNeue.otf */; };
+		16747FB01B5C08B300F417E4 /* FinalCostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16747FAF1B5C08B300F417E4 /* FinalCostViewController.m */; };
+		16747FB21B5C14D900F417E4 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 16747FB11B5C14D900F417E4 /* icon.png */; };
 		16CCD03D1B386D9100756EC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CCD03C1B386D9100756EC6 /* main.m */; };
 		16CCD0401B386D9100756EC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CCD03F1B386D9100756EC6 /* AppDelegate.m */; };
 		16CCD0431B386D9100756EC6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CCD0421B386D9100756EC6 /* ViewController.m */; };
@@ -36,6 +38,9 @@
 		1669A96F1B52E6DD006C015F /* AddressPickerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressPickerTableViewController.h; sourceTree = "<group>"; };
 		1669A9701B52E6DD006C015F /* AddressPickerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressPickerTableViewController.m; sourceTree = "<group>"; };
 		1670A8431B4F12F600594007 /* BebasNeue.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BebasNeue.otf; sourceTree = "<group>"; };
+		16747FAE1B5C08B300F417E4 /* FinalCostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalCostViewController.h; sourceTree = "<group>"; };
+		16747FAF1B5C08B300F417E4 /* FinalCostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalCostViewController.m; sourceTree = "<group>"; };
+		16747FB11B5C14D900F417E4 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		16CCD0371B386D9100756EC6 /* TransportInc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransportInc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16CCD03B1B386D9100756EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16CCD03C1B386D9100756EC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -101,6 +106,8 @@
 				16CCD0411B386D9100756EC6 /* ViewController.h */,
 				16CCD0421B386D9100756EC6 /* ViewController.m */,
 				16CCD0441B386D9100756EC6 /* Main.storyboard */,
+				16747FAE1B5C08B300F417E4 /* FinalCostViewController.h */,
+				16747FAF1B5C08B300F417E4 /* FinalCostViewController.m */,
 				1669A96F1B52E6DD006C015F /* AddressPickerTableViewController.h */,
 				1669A9701B52E6DD006C015F /* AddressPickerTableViewController.m */,
 				165373481B50F96F00BE6A4B /* BookNowTableViewController.h */,
@@ -115,6 +122,7 @@
 		16CCD03A1B386D9100756EC6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				16747FB11B5C14D900F417E4 /* icon.png */,
 				1670A8431B4F12F600594007 /* BebasNeue.otf */,
 				16CCD03B1B386D9100756EC6 /* Info.plist */,
 				16CCD03C1B386D9100756EC6 /* main.m */,
@@ -239,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16CCD0461B386D9100756EC6 /* Main.storyboard in Resources */,
+				16747FB21B5C14D900F417E4 /* icon.png in Resources */,
 				16CCD04B1B386D9100756EC6 /* LaunchScreen.xib in Resources */,
 				1670A8441B4F12F600594007 /* BebasNeue.otf in Resources */,
 				16CCD0481B386D9100756EC6 /* Images.xcassets in Resources */,
@@ -296,6 +305,7 @@
 				1653734A1B50F96F00BE6A4B /* BookNowTableViewController.m in Sources */,
 				16CCD0401B386D9100756EC6 /* AppDelegate.m in Sources */,
 				16CCD03D1B386D9100756EC6 /* main.m in Sources */,
+				16747FB01B5C08B300F417E4 /* FinalCostViewController.m in Sources */,
 				1669A9711B52E6DD006C015F /* AddressPickerTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

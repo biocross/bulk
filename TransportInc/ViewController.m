@@ -95,4 +95,8 @@
     GMSCameraUpdate *move = [GMSCameraUpdate setTarget:self.cachedLocation.coordinate zoom:17];
     [mapView_ animateWithCameraUpdate:move];
 }
+- (IBAction)callButtonPressed:(id)sender {
+    NSURL *url = [NSURL URLWithString:@"telprompt://+919644222223"];
+    [[UIApplication sharedApplication] openURL:url];
+}
 @end

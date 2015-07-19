@@ -12,7 +12,7 @@
 
 @protocol AddressPickerDelegate <NSObject>
 @required
-- (void)selectedAddress:(GMSAutocompletePrediction *)address ForID:(int)recieverID;
+- (void)selectedAddress:(GMSPlace *)address ForID:(int)recieverID;
 @end
 
 

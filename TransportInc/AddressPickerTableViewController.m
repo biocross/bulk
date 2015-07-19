@@ -13,7 +13,7 @@
 
 @interface AddressPickerTableViewController (){
     id <AddressPickerDelegate> _delegate;
-    GMSAutocompletePrediction *selectedAddress;
+    GMSPlace *selectedAddress;
 }
 
 @property NSArray *suggestions;
@@ -31,12 +31,14 @@
     self.tableView.dataSource = self;
     self.seachBar.delegate = self;
     
+    self.selectPlaceButton.backgroundColor = [UIColor colorWithRed:0 green:0.60 blue:0.93 alpha:1];
+    
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:21.2619056
                                                             longitude:81.6190733
                                                                  zoom:12];
     _pickUpMap = [GMSMapView mapWithFrame:CGRectZero camera:camera];
     _pickUpMap.myLocationEnabled = YES;
-    _pickUpMap.frame = self.mapContainer.frame;
+    _pickUpMap.frame = CGRectMake(self.mapContainer.frame.origin.x, self.mapContainer.frame.origin.y-64, self.mapContainer.frame.size.width, self.mapContainer.frame.size.height);
     
     [self.mapContainer addSubview:_pickUpMap];
     [self.seachBar becomeFirstResponder];
@@ -44,6 +46,10 @@
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
     [self didChangeTextInTextField];
+}
+
+-(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+    [searchBar resignFirstResponder];
 }
 
 - (void)didChangeTextInTextField{
@@ -86,8 +92,33 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-    selectedAddress = self.suggestions[indexPath.row];
+    [self.seachBar resignFirstResponder];
+    GMSAutocompletePrediction *thePlace = self.suggestions[indexPath.row];
+    NSString *placeID = thePlace.placeID;
     
+    [_placesClient lookUpPlaceID:placeID callback:^(GMSPlace *place, NSError *error) {
+        if (error != nil) {
+            NSLog(@"Place Details error %@", [error localizedDescription]);
+            return;
+        }
+        if (place != nil) {
+            [self.pickUpMap clear];
+            
+            selectedAddress = place;
+            GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:place.coordinate.latitude longitude:place.coordinate.longitude zoom:16];
+            
+            [self.pickUpMap animateToCameraPosition:camera];
+            
+            GMSMarker *marker = [[GMSMarker alloc] init];
+            marker.position = camera.target;
+            marker.snippet = place.name;
+            marker.appearAnimation = kGMSMarkerAnimationPop;
+            marker.map = self.pickUpMap;
+            
+        } else {
+            NSLog(@"No place details for %@", placeID);
+        }
+    }];
 }
 
 - (IBAction)selectPlacePressed:(id)sender {

@@ -11,8 +11,6 @@
             <string>BebasNeue</string>
             <string>BebasNeue</string>
             <string>BebasNeue</string>
-            <string>BebasNeue</string>
-            <string>BebasNeue</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -76,6 +74,9 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="callButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9sR-NK-lq6"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -121,30 +122,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="u2U-zX-75s" userLabel="ButtonView">
-                            <rect key="frame" x="0.0" y="692" width="414" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOz-xd-8bd" userLabel="Book Now">
-                                    <rect key="frame" x="147" y="7" width="120" height="30"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="120" id="8EW-Mf-7Wi"/>
-                                        <constraint firstAttribute="height" constant="30" id="QEU-h8-nEi"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="21"/>
-                                    <state key="normal" title="Book Now">
-                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                </button>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="centerY" secondItem="xOz-xd-8bd" secondAttribute="centerY" id="3cN-xm-z13"/>
-                                <constraint firstAttribute="centerX" secondItem="xOz-xd-8bd" secondAttribute="centerX" id="fLh-eU-hz6"/>
-                                <constraint firstAttribute="height" constant="44" id="mCu-Iq-2mc"/>
-                            </constraints>
-                        </view>
                         <sections>
                             <tableViewSection headerTitle="Pick Up" id="EYa-hd-RoC">
                                 <cells>
@@ -155,7 +132,7 @@
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Select Pick Up Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zvJ-EW-6YK">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -179,7 +156,7 @@
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Select Drop Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wz8-VZ-UlA">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -196,10 +173,70 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Options" id="SRb-DI-71m">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="iqB-6u-zPv">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ZjI-7u-1nL" detailTextLabel="fdH-Mr-5mG" style="IBUITableViewCellStyleValue1" id="iqB-6u-zPv">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iqB-6u-zPv" id="aZe-IB-sLk">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Weight" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZjI-7u-1nL">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="8 tons" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fdH-Mr-5mG">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="1XS-gr-xnR" detailTextLabel="KLP-1M-tML" style="IBUITableViewCellStyleValue1" id="98j-kS-adJ">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="98j-kS-adJ" id="L1d-PC-HvW">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Distance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1XS-gr-xnR">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Calculating..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KLP-1M-tML">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Options" id="6hj-sb-L6V" userLabel="Book">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="b36-Ob-lYI" detailTextLabel="V0N-Ci-k4X" rowHeight="60" style="IBUITableViewCellStyleValue1" id="96A-ZW-QEZ">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="96A-ZW-QEZ" id="Xlr-H4-cF4">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Book Now" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b36-Ob-lYI">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="&gt;" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="V0N-Ci-k4X">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -212,9 +249,11 @@
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="BookNowButton" destination="u2U-zX-75s" id="S6K-IV-Asv"/>
+                        <outlet property="bookNowView" destination="Xlr-H4-cF4" id="puB-yM-4BL"/>
+                        <outlet property="distanceLabel" destination="KLP-1M-tML" id="K26-Jt-CPw"/>
                         <outlet property="dropLabel" destination="Wz8-VZ-UlA" id="sdt-Ll-5z8"/>
                         <outlet property="pickUpLabel" destination="zvJ-EW-6YK" id="RCJ-97-yY9"/>
+                        <outlet property="weightLabel" destination="fdH-Mr-5mG" id="8C9-cg-aGf"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dhd-gG-UHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -239,6 +278,7 @@
                             </searchBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LgP-Vf-047" userLabel="Map">
                                 <rect key="frame" x="0.0" y="64" width="414" height="180"/>
+                                <color key="backgroundColor" red="0.35928289479999997" green="0.66666666669999997" blue="0.58775989009999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="KXf-eV-R4f"/>
                                 </constraints>
@@ -254,7 +294,7 @@
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qrd-4E-vUn">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -266,12 +306,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Cj-hd-Vsn" userLabel="ButtonView">
                                 <rect key="frame" x="0.0" y="692" width="414" height="44"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyv-5N-32j" userLabel="Book Now">
-                                        <rect key="frame" x="147" y="3" width="120" height="38"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="UFh-bA-vYG"/>
-                                            <constraint firstAttribute="width" constant="120" id="s5v-it-gop"/>
-                                        </constraints>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyv-5N-32j" userLabel="Book Now">
+                                        <rect key="frame" x="-16" y="0.0" width="446" height="44"/>
                                         <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="21"/>
                                         <state key="normal" title="Select">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -286,6 +322,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="5cm-D4-egH"/>
                                     <constraint firstAttribute="centerX" secondItem="lyv-5N-32j" secondAttribute="centerX" id="5yN-Ng-Kqe"/>
+                                    <constraint firstItem="lyv-5N-32j" firstAttribute="top" secondItem="6Cj-hd-Vsn" secondAttribute="top" id="JOY-Mc-ZwU"/>
+                                    <constraint firstItem="lyv-5N-32j" firstAttribute="leading" secondItem="6Cj-hd-Vsn" secondAttribute="leading" constant="-16" id="YiI-eq-VsV"/>
+                                    <constraint firstAttribute="trailing" secondItem="lyv-5N-32j" secondAttribute="trailing" constant="-16" id="YuC-Ju-HFL"/>
+                                    <constraint firstAttribute="bottom" secondItem="lyv-5N-32j" secondAttribute="bottom" id="eyk-NP-nWq"/>
                                     <constraint firstAttribute="centerY" secondItem="lyv-5N-32j" secondAttribute="centerY" id="wIc-hZ-1SI"/>
                                 </constraints>
                             </view>
@@ -318,6 +358,139 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CZc-BF-cjS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2023" y="355"/>
+        </scene>
+        <!--Final Cost View Controller-->
+        <scene sceneID="281-0E-5gH">
+            <objects>
+                <viewController storyboardIdentifier="CostView" id="3DO-6A-gZK" customClass="FinalCostViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QOs-Ir-Sv0"/>
+                        <viewControllerLayoutGuide type="bottom" id="OHY-ux-vIe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jCj-um-PNN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="₹ 340" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9G-PP-mb2">
+                                <rect key="frame" x="95" y="99" width="225" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="ar2-6J-hzY"/>
+                                    <constraint firstAttribute="height" constant="70" id="cKj-9e-Abh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="60"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expected Cost" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6P-xx-8cF">
+                                <rect key="frame" x="150" y="70" width="114" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="nr1-AD-vVu"/>
+                                    <constraint firstAttribute="height" constant="21" id="wWi-5Y-nzb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="from" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6M-wD-bNE">
+                                <rect key="frame" x="192" y="273" width="30" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="5N3-wQ-RKL"/>
+                                    <constraint firstAttribute="width" constant="30" id="yVs-v6-Dgb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0h-7F-3dY">
+                                <rect key="frame" x="201" y="327" width="13" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="q5x-K1-TeA"/>
+                                    <constraint firstAttribute="width" constant="13" id="zRK-F3-Z7n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="pick up address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgZ-Zb-Cus">
+                                <rect key="frame" x="37" y="298" width="340" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="10V-YR-uuY"/>
+                                    <constraint firstAttribute="height" constant="21" id="Klg-lZ-rYc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="destination address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wog-hm-lYr">
+                                <rect key="frame" x="37" y="352" width="340" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="1iM-bt-tj3"/>
+                                    <constraint firstAttribute="height" constant="21" id="KPf-mY-zF9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2W-eg-5QP">
+                                <rect key="frame" x="0.0" y="656" width="414" height="80"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="NdE-pe-Raw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="26"/>
+                                <state key="normal" title="Confirm Booking">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="bookingButtonPressed:" destination="3DO-6A-gZK" eventType="touchUpInside" id="ROh-st-xaA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Distance: 320 km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pff-q4-8R3">
+                                <rect key="frame" x="140" y="178" width="134" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="58p-7K-fdH"/>
+                                    <constraint firstAttribute="width" constant="134" id="Uln-Ll-91X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="M2W-eg-5QP" secondAttribute="centerX" id="0pM-hM-Urp"/>
+                            <constraint firstItem="V0h-7F-3dY" firstAttribute="top" secondItem="OgZ-Zb-Cus" secondAttribute="bottom" constant="8" id="4sY-EY-SnQ"/>
+                            <constraint firstAttribute="centerX" secondItem="pff-q4-8R3" secondAttribute="centerX" id="5tK-S1-e4b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M2W-eg-5QP" secondAttribute="trailing" constant="-16" id="AWq-GX-l5K"/>
+                            <constraint firstAttribute="centerX" secondItem="s6P-xx-8cF" secondAttribute="centerX" id="FcA-zA-gfc"/>
+                            <constraint firstItem="M2W-eg-5QP" firstAttribute="leading" secondItem="jCj-um-PNN" secondAttribute="leadingMargin" constant="-16" id="Hc3-uW-JWS"/>
+                            <constraint firstItem="s6P-xx-8cF" firstAttribute="top" secondItem="QOs-Ir-Sv0" secondAttribute="bottom" constant="50" id="IxS-hc-KV7"/>
+                            <constraint firstItem="OgZ-Zb-Cus" firstAttribute="top" secondItem="P6M-wD-bNE" secondAttribute="bottom" constant="8" id="QtH-TT-Amc"/>
+                            <constraint firstItem="V9G-PP-mb2" firstAttribute="top" secondItem="s6P-xx-8cF" secondAttribute="bottom" constant="8" id="STq-Yq-w2H"/>
+                            <constraint firstItem="P6M-wD-bNE" firstAttribute="top" secondItem="pff-q4-8R3" secondAttribute="bottom" constant="75" id="TKA-XI-oxQ"/>
+                            <constraint firstAttribute="centerX" secondItem="OgZ-Zb-Cus" secondAttribute="centerX" id="Tje-Yl-nT6"/>
+                            <constraint firstItem="OHY-ux-vIe" firstAttribute="top" secondItem="M2W-eg-5QP" secondAttribute="bottom" id="UtY-6b-VjZ"/>
+                            <constraint firstAttribute="centerX" secondItem="V9G-PP-mb2" secondAttribute="centerX" id="amj-ER-lXv"/>
+                            <constraint firstAttribute="centerX" secondItem="wog-hm-lYr" secondAttribute="centerX" id="jeS-DB-7qo"/>
+                            <constraint firstAttribute="centerX" secondItem="P6M-wD-bNE" secondAttribute="centerX" id="pMO-rb-EIF"/>
+                            <constraint firstItem="pff-q4-8R3" firstAttribute="top" secondItem="V9G-PP-mb2" secondAttribute="bottom" constant="8" id="qIy-bV-Fo1"/>
+                            <constraint firstAttribute="centerX" secondItem="V0h-7F-3dY" secondAttribute="centerX" id="xf4-iV-K3s"/>
+                            <constraint firstItem="wog-hm-lYr" firstAttribute="top" secondItem="V0h-7F-3dY" secondAttribute="bottom" constant="8" id="zK8-jg-eJF"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="bookingButton" destination="M2W-eg-5QP" id="JSL-2L-Ee8"/>
+                        <outlet property="costLabel" destination="V9G-PP-mb2" id="FG4-dr-ZVB"/>
+                        <outlet property="destinationLabel" destination="wog-hm-lYr" id="AfY-nH-EH7"/>
+                        <outlet property="distanceLabel" destination="pff-q4-8R3" id="SrQ-IW-DsA"/>
+                        <outlet property="pickUpLabel" destination="OgZ-Zb-Cus" id="vQX-dz-v5E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dh1-Qn-XCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2478" y="355"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UUe-Ta-JjI">

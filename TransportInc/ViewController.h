@@ -17,6 +17,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *bookNowButton;
 @property (strong, nonatomic) IBOutlet UIButton *callButton;
 
+- (IBAction)callButtonPressed:(id)sender;
 
 @end
 
