@@ -41,7 +41,7 @@
 		16747FAE1B5C08B300F417E4 /* FinalCostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalCostViewController.h; sourceTree = "<group>"; };
 		16747FAF1B5C08B300F417E4 /* FinalCostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalCostViewController.m; sourceTree = "<group>"; };
 		16747FB11B5C14D900F417E4 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		16CCD0371B386D9100756EC6 /* TransportInc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransportInc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16CCD0371B386D9100756EC6 /* bulk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bulk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16CCD03B1B386D9100756EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16CCD03C1B386D9100756EC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16CCD03E1B386D9100756EC6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		16CCD0381B386D9100756EC6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				16CCD0371B386D9100756EC6 /* TransportInc.app */,
+				16CCD0371B386D9100756EC6 /* bulk.app */,
 				16CCD0501B386D9100756EC6 /* TransportIncTests.xctest */,
 			);
 			name = Products;
@@ -167,9 +167,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		16CCD0361B386D9100756EC6 /* TransportInc */ = {
+		16CCD0361B386D9100756EC6 /* Truck */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 16CCD05A1B386D9100756EC6 /* Build configuration list for PBXNativeTarget "TransportInc" */;
+			buildConfigurationList = 16CCD05A1B386D9100756EC6 /* Build configuration list for PBXNativeTarget "Truck" */;
 			buildPhases = (
 				EF9731EF8CAEF6CC1B1577D4 /* Check Pods Manifest.lock */,
 				16CCD0331B386D9100756EC6 /* Sources */,
@@ -181,9 +181,9 @@
 			);
 			dependencies = (
 			);
-			name = TransportInc;
+			name = Truck;
 			productName = TransportInc;
-			productReference = 16CCD0371B386D9100756EC6 /* TransportInc.app */;
+			productReference = 16CCD0371B386D9100756EC6 /* bulk.app */;
 			productType = "com.apple.product-type.application";
 		};
 		16CCD04F1B386D9100756EC6 /* TransportIncTests */ = {
@@ -215,6 +215,7 @@
 				TargetAttributes = {
 					16CCD0361B386D9100756EC6 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = RV68FXHFU7;
 					};
 					16CCD04F1B386D9100756EC6 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -235,7 +236,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				16CCD0361B386D9100756EC6 /* TransportInc */,
+				16CCD0361B386D9100756EC6 /* Truck */,
 				16CCD04F1B386D9100756EC6 /* TransportIncTests */,
 			);
 		};
@@ -323,7 +324,7 @@
 /* Begin PBXTargetDependency section */
 		16CCD0521B386D9100756EC6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 16CCD0361B386D9100756EC6 /* TransportInc */;
+			target = 16CCD0361B386D9100756EC6 /* Truck */;
 			targetProxy = 16CCD0511B386D9100756EC6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -433,6 +434,7 @@
 			baseConfigurationReference = 72FA2E7747AA98141643A196 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Pratham Mehta (RV68FXHFU7)";
 				INFOPLIST_FILE = TransportInc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +446,7 @@
 			baseConfigurationReference = 53C9ADB17351AE8174A3973B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Pratham Mehta (RV68FXHFU7)";
 				INFOPLIST_FILE = TransportInc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -465,7 +468,7 @@
 				INFOPLIST_FILE = TransportIncTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransportInc.app/TransportInc";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Truck.app/Truck";
 			};
 			name = Debug;
 		};
@@ -480,7 +483,7 @@
 				INFOPLIST_FILE = TransportIncTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransportInc.app/TransportInc";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Truck.app/Truck";
 			};
 			name = Release;
 		};
@@ -496,7 +499,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		16CCD05A1B386D9100756EC6 /* Build configuration list for PBXNativeTarget "TransportInc" */ = {
+		16CCD05A1B386D9100756EC6 /* Build configuration list for PBXNativeTarget "Truck" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16CCD05B1B386D9100756EC6 /* Debug */,

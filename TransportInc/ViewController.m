@@ -96,7 +96,7 @@
     [mapView_ animateWithCameraUpdate:move];
 }
 - (IBAction)callButtonPressed:(id)sender {
-    NSURL *url = [NSURL URLWithString:@"telprompt://+919644222223"];
+    NSURL *url = [NSURL URLWithString:@"telprompt://+919630523281"];
     [[UIApplication sharedApplication] openURL:url];
 }
 @end
