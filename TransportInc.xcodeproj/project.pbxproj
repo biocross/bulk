@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		164934A41B6C182100E36FC4 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 164934A31B6C182100E36FC4 /* Icon.png */; };
 		1653734A1B50F96F00BE6A4B /* BookNowTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 165373491B50F96F00BE6A4B /* BookNowTableViewController.m */; };
 		1669A9711B52E6DD006C015F /* AddressPickerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1669A9701B52E6DD006C015F /* AddressPickerTableViewController.m */; };
 		1670A8441B4F12F600594007 /* BebasNeue.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1670A8431B4F12F600594007 /* BebasNeue.otf */; };
 		16747FB01B5C08B300F417E4 /* FinalCostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16747FAF1B5C08B300F417E4 /* FinalCostViewController.m */; };
-		16747FB21B5C14D900F417E4 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 16747FB11B5C14D900F417E4 /* icon.png */; };
+		167C68B11B6C03DF00798E19 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 167C68B01B6C03DF00798E19 /* phone.png */; };
 		16CCD03D1B386D9100756EC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CCD03C1B386D9100756EC6 /* main.m */; };
 		16CCD0401B386D9100756EC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CCD03F1B386D9100756EC6 /* AppDelegate.m */; };
 		16CCD0431B386D9100756EC6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CCD0421B386D9100756EC6 /* ViewController.m */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		164934A31B6C182100E36FC4 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		165373481B50F96F00BE6A4B /* BookNowTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookNowTableViewController.h; sourceTree = "<group>"; };
 		165373491B50F96F00BE6A4B /* BookNowTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookNowTableViewController.m; sourceTree = "<group>"; };
 		1669A96F1B52E6DD006C015F /* AddressPickerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressPickerTableViewController.h; sourceTree = "<group>"; };
@@ -40,8 +42,8 @@
 		1670A8431B4F12F600594007 /* BebasNeue.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BebasNeue.otf; sourceTree = "<group>"; };
 		16747FAE1B5C08B300F417E4 /* FinalCostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalCostViewController.h; sourceTree = "<group>"; };
 		16747FAF1B5C08B300F417E4 /* FinalCostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalCostViewController.m; sourceTree = "<group>"; };
-		16747FB11B5C14D900F417E4 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		16CCD0371B386D9100756EC6 /* bulk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bulk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		167C68B01B6C03DF00798E19 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
+		16CCD0371B386D9100756EC6 /* Truck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Truck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16CCD03B1B386D9100756EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16CCD03C1B386D9100756EC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16CCD03E1B386D9100756EC6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,7 +94,7 @@
 		16CCD0381B386D9100756EC6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				16CCD0371B386D9100756EC6 /* bulk.app */,
+				16CCD0371B386D9100756EC6 /* Truck.app */,
 				16CCD0501B386D9100756EC6 /* TransportIncTests.xctest */,
 			);
 			name = Products;
@@ -122,7 +124,8 @@
 		16CCD03A1B386D9100756EC6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				16747FB11B5C14D900F417E4 /* icon.png */,
+				164934A31B6C182100E36FC4 /* Icon.png */,
+				167C68B01B6C03DF00798E19 /* phone.png */,
 				1670A8431B4F12F600594007 /* BebasNeue.otf */,
 				16CCD03B1B386D9100756EC6 /* Info.plist */,
 				16CCD03C1B386D9100756EC6 /* main.m */,
@@ -183,7 +186,7 @@
 			);
 			name = Truck;
 			productName = TransportInc;
-			productReference = 16CCD0371B386D9100756EC6 /* bulk.app */;
+			productReference = 16CCD0371B386D9100756EC6 /* Truck.app */;
 			productType = "com.apple.product-type.application";
 		};
 		16CCD04F1B386D9100756EC6 /* TransportIncTests */ = {
@@ -248,7 +251,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				16CCD0461B386D9100756EC6 /* Main.storyboard in Resources */,
-				16747FB21B5C14D900F417E4 /* icon.png in Resources */,
+				164934A41B6C182100E36FC4 /* Icon.png in Resources */,
+				167C68B11B6C03DF00798E19 /* phone.png in Resources */,
 				16CCD04B1B386D9100756EC6 /* LaunchScreen.xib in Resources */,
 				1670A8441B4F12F600594007 /* BebasNeue.otf in Resources */,
 				16CCD0481B386D9100756EC6 /* Images.xcassets in Resources */,

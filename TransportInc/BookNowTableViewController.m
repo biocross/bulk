@@ -14,7 +14,6 @@
 }
 
 @property GMSPlace *pickUpAddress;
-@property GMSPlace *destinationAddress;
 @property (strong, nonatomic) IBOutlet UILabel *pickUpLabel;
 @property (strong, nonatomic) IBOutlet UILabel *dropLabel;
 
@@ -31,10 +30,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.bookNowView.backgroundColor = [UIColor colorWithRed:0 green:0.60 blue:0.93 alpha:1];
-    
-    
     
 }
 
@@ -45,18 +41,12 @@
         addressPicker.recieverID = [NSNumber numberWithInt:0];
         [self.navigationController pushViewController:addressPicker animated:YES];
     }
-    else if(indexPath.section == 1){
-        AddressPickerTableViewController *addressPicker = [self.storyboard instantiateViewControllerWithIdentifier:@"AddressPicker"];
-        addressPicker.delegate = self;
-        addressPicker.recieverID = [NSNumber numberWithInt:1];
-        [self.navigationController pushViewController:addressPicker animated:YES];
-    }
-    else if(indexPath.section == 3){
+    else if(indexPath.section == 2){
         if(indexPath.row == 0){
             FinalCostViewController *costController = [self.storyboard instantiateViewControllerWithIdentifier:@"CostView"];
             costController.pickUpAddress = self.pickUpAddress.name;
-            costController.destinationAddress = self.destinationAddress.name;
-            costController.distance = [self.distanceLabel.text integerValue];
+            costController.destinationAddress = @"";
+            costController.distance = 40;
             [self.navigationController pushViewController:costController animated:YES];
         }
     }
@@ -68,25 +58,21 @@
         self.pickUpAddress = address;
         self.pickUpLabel.text = address.name;
     }
-    else {
-        self.destinationAddress = address;
-        self.dropLabel.text = address.name;
-    }
     
-    if(self.pickUpAddress && self.destinationAddress){
-        NSLog(@"Both Addresses are here, getting directions");
-        NSString *origin = [NSString stringWithFormat:@"%f,%f", self.pickUpAddress.coordinate.latitude, self.pickUpAddress.coordinate.longitude];
-        NSString *destination = [NSString stringWithFormat:@"%f,%f", self.destinationAddress.coordinate.latitude, self.destinationAddress.coordinate.longitude];
-        
-        [[GMDirectionService sharedInstance] getDirectionsFrom:origin to:destination succeeded:^(GMDirection *directionResponse) {
-            if ([directionResponse statusOK]){
-                NSLog(@"Distance : %@", [directionResponse distanceHumanized]);
-                self.distanceLabel.text = [directionResponse distanceHumanized];
-            }
-        } failed:^(NSError *error) {
-            NSLog(@"Error in getting directions: %@", [error description]);
-        }];
-    }
+//    if(self.pickUpAddress){
+//        NSLog(@"Both Addresses are here, getting directions");
+//        NSString *origin = [NSString stringWithFormat:@"%f,%f", self.pickUpAddress.coordinate.latitude, self.pickUpAddress.coordinate.longitude];
+//        NSString *destination = [NSString stringWithFormat:@"%f,%f", self.destinationAddress.coordinate.latitude, self.destinationAddress.coordinate.longitude];
+//        
+//        [[GMDirectionService sharedInstance] getDirectionsFrom:origin to:destination succeeded:^(GMDirection *directionResponse) {
+//            if ([directionResponse statusOK]){
+//                NSLog(@"Distance : %@", [directionResponse distanceHumanized]);
+//                self.distanceLabel.text = [directionResponse distanceHumanized];
+//            }
+//        } failed:^(NSError *error) {
+//            NSLog(@"Error in getting directions: %@", [error description]);
+//        }];
+//    }
 }
 
 @end

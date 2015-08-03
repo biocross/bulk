@@ -24,7 +24,7 @@
     self.destinationLabel.text = self.destinationAddress;
     
     self.distanceLabel.text = [NSString stringWithFormat:@"Distance: %ld km", (long)self.distance];
-    long cost = self.distance * 20;
+    long cost = self.distance * 70;
     self.costLabel.text = [NSString stringWithFormat:@"₹ %ld", cost];
 }
 
